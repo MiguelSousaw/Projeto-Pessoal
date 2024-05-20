@@ -249,7 +249,7 @@ section{
     background-color: var(--cor4);
     grid-column: 1/3;
     grid-row: 2/3;
-    background-image: url(../Imagens/nuvens-de-estilo-fotorrealista.jpg);
+    background-image: url(Imagens/nuvens-de-estilo-fotorrealista.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
