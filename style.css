@@ -224,7 +224,7 @@ section{
     animation: 1;
     animation-duration: 3.8s;
     animation-name: animacao;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
 }
 
 #sobre-mim > h1{
@@ -240,7 +240,6 @@ section{
     animation: 1;
     animation-duration: 3.8s;
     animation-name: animacao;
-
 }
 
 /*------------------------------Sessão2-------------------------*/
@@ -261,6 +260,7 @@ section{
     overflow-x: auto;
     align-items: center;
     justify-items: center;
+    gap: 10px;
     
 }
 
@@ -270,8 +270,8 @@ section{
 
 #seçao2 > div{
     background-color:  #0460d987;
-    width: 300px;
-    height: 350px;
+    max-width: 300px;
+    max-height: 350px;
     border-radius: 5px;
     text-indent: 20px;
     text-align: justify;
@@ -294,8 +294,6 @@ section{
 #div2{
     grid-row: 1/4;
     grid-column: 2/3;
-    margin-right: 100px;
-    margin-left: 100px;
 }
 
 #div3{
@@ -320,14 +318,14 @@ li{
     list-style: '☑️';
     margin-bottom: 5px;
     list-style-position: inside;
-    font-size: 1.3em;
+    font-size: 1.3vw;
     font-family: var(--nunino);
     font-weight: normal;
 }
 
 #seçao2 > div > p{
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 1.2vw;
     margin-top: 20px;
     font-family: var(--abel);
 }
