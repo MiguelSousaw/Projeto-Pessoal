@@ -66,12 +66,14 @@ body{
    height: 100vh;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: 200px 1fr 1fr 1fr 200px;
+   grid-template-rows: 150px 1fr 1fr 1fr 200px;
    background-repeat: no-repeat;
    background-attachment: fixed;
-   
 }
 
+hmtl{
+    height: 100vh;
+}
 /*--------------------------Header----------------------------------*/
 
 header{
@@ -186,35 +188,26 @@ section{
 
 #seçao1{
     background-image: radial-gradient(var(--cor3), var(--cor1), var(--cor2));
+    display: flex;
     grid-column: 1/3;
-    grid-row: 1/2;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-row: 1/2; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+/*    Tornar grid caso flex não funcione  */
 }
 
 #sobre-mim{
-    max-width: 800px;
-    max-height: 350px;
-    grid-column: 1/3;
-    grid-row: 1/5;
     border-radius: 10px;
     padding: 20px;
     padding-top: 10px;
     line-height: 2vw;
     text-indent: 15px;
-    justify-self: center;
-    align-self: center;  
-    overflow-y: auto;
 }
 
 #avatar{
-    grid-column: 3/4;
-    grid-row: 1/5;
-    justify-self: center;
-    align-self: end;
-
-    /*tornar responsivo*/
+   align-self: end; 
 }
 
 #sobre-mim > p{
@@ -254,14 +247,19 @@ section{
     background-size: cover;
     background-attachment: fixed;
     padding: 10px;
-    display: grid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 20px;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     overflow-x: auto;
     align-items: center;
     justify-items: center;
-    gap: 10px;
-    
+    gap: 20px; */
 }
 
 ::-webkit-scrollbar{
@@ -279,11 +277,11 @@ section{
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.527);
 }
 
-#div1{
+/* #div1{
     grid-row: 1/4;
     grid-column: 1/2;
    
-}
+} */
 
 #seçao2 > div > img{
     margin: auto;
@@ -291,42 +289,40 @@ section{
     padding-bottom: 10px;
 }
 
-#div2{
+/* #div2{
     grid-row: 1/4;
     grid-column: 2/3;
-}
+} */
 
-#div3{
+/* #div3{
     grid-row: 1/4;
-    grid-column: 3/4;
+    grid-column: 3/4; */
     
-}
 
 #book{
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 #bjj{
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 #camera{
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 li{
     list-style: '☑️';
-    margin-bottom: 5px;
     list-style-position: inside;
-    font-size: 1.3vw;
+    font-size: 1.2em;
     font-family: var(--nunino);
     font-weight: normal;
 }
 
 #seçao2 > div > p{
     text-align: justify;
-    font-size: 1.2vw;
-    margin-top: 20px;
+    font-size: 1.2em;
+    margin-top: 10px;
     font-family: var(--abel);
 }
 
