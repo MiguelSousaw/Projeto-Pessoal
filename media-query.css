@@ -11,6 +11,8 @@ Grandes telas: Acima de 1200
 
 
 @media screen and (max-width: 768px){
+
+    /* Para celular */
     body{
         grid-template-rows: 170px 1fr 1fr 1fr 170px;
     }
@@ -117,6 +119,14 @@ Grandes telas: Acima de 1200
     #estudos{
         grid-column: 1/3;
         grid-row: 5/6;
+    }
+
+    footer > p{
+        font-family: var(--dancing);
+        grid-row: 3/4;
+        grid-column: 1/4;
+        justify-self: end;
+        align-self: end;
     }
 
 }
