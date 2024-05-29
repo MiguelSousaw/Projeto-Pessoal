@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+
+/* Device Breakpoints
+Pequenas telas: 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: Acima de 1200
+*/
+
+
+@media screen and (max-width: 768px){
+    body{
+        grid-template-rows: 170px 1fr 1fr 1fr 170px;
+    }
+
+    #titulo-cabeçalho{
+        font-size: 3em;
+        align-self: start;
+        grid-column: 1/5;
+        justify-self: center;
+    }
+
+    header > img{
+        display: none;
+    }
+
+    nav{
+        align-self: end;
+    }
+
+    nav > a{
+        font-size: 1em;
+    }
+
+    nav > img{
+        width: 7%;
+    }
+
+    main{
+        grid-template-rows: 1200px 1fr 1700px;
+    }
+
+    /* ----------------------------------SEÇÃO 1--------------------------- */
+    #seçao1{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+    #sobre-mim{
+        grid-row: 2/4;
+        grid-column: 1/4;
+        justify-self: center;
+        align-self: start;
+    }
+
+    #sobre-mim > h1{
+        font-size: 3em;
+        margin-bottom: 30px;
+       }
+
+    #sobre-mim > p{
+        font-size: 1.3em;
+        line-height: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #apresentaçao{
+        grid-row: 1/2;
+        grid-column: 1/4;
+        justify-self: center;
+        align-self: center;
+        width: 70%;
+        height: 80%;
+    }
+
+    #seçao3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        align-items: start;
+        justify-content: center;
+    }
+
+    #cabeçalho{
+        grid-column: 1/5;
+        grid-row: 1/2;
+        align-self: start;
+        justify-self: center;
+        text-align: center;
+        font-weight: normal;
+        margin-top: 50px;
+    }
+
+    #seçao3 > div > img{ 
+        margin: 0 auto;
+    }
+
+    #seçao3 > div{
+        text-align: center;
+    }
+    #profi{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    
+    #pessoal{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    
+    #espiritual{
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    
+    #estudos{
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    /*Para Tablet*/
+    
+    body{
+        grid-template-rows: 200px 1fr 1fr 1fr 170px;
+    }
+
+    #titulo-cabeçalho{
+        font-size: 4em;
+        align-self: start;
+        grid-column: 1/5;
+        justify-self: center;
+    }
+
+    header > img{
+        display: none;
+    }
+
+    nav{
+        align-self: end;
+    }
+
+    nav > a{
+        font-size: 1.5em;
+    }
+
+    nav > img{
+        width: 7%;
+    }
+
+    main{
+        grid-template-rows: 1800px 1fr 2100px;
+    }
+
+    /* ----------------------------------SEÇÃO 1--------------------------- */
+    #seçao1{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+    #sobre-mim{
+        grid-row: 2/4;
+        grid-column: 1/4;
+        justify-self: center;
+        align-self: start;
+    }
+
+    #sobre-mim > h1{
+        font-size: 3em;
+        margin-bottom: 30px;
+       }
+
+    #sobre-mim > p{
+        font-size: 2em;
+        line-height: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #apresentaçao{
+        grid-row: 1/2;
+        grid-column: 1/4;
+        justify-self: center;
+        align-self: center;
+        width: 70%;
+        height: 80%;
+    }
+
+    #seçao3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 1fr 1fr 1fr 1fr;
+        align-items: start;
+        justify-content: center;
+    }
+
+    #cabeçalho{
+        grid-column: 1/5;
+        grid-row: 1/2;
+        align-self: start;
+        justify-self: center;
+        text-align: center;
+        font-weight: normal;
+        margin-top: 50px;
+    }
+
+    #seçao3 > div > img{ 
+        margin: 0 auto;
+    }
+
+    #seçao3 > div{
+        text-align: left;
+    }
+    #profi{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    #seçao3 > div > img{
+        width: 50%;
+    }
+
+    #seçao3 > div > h3{
+        font-size: 3em;
+    }
+
+    #pessoal{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    
+    #espiritual{
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    
+    #estudos{
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+
+}

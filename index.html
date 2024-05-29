@@ -5,48 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página pessoal</title>
     <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="shortcut icon" href="Imagens/flag--kr-4x3.svg" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>Miguel De Sousa</h1>
-        <img src="Imagens/minha foto pessoal.jpg" alt="miguel de sousa">
+        <h1 id="titulo-cabeçalho">Miguel De Sousa</h1>
+        <img src="Imagens/icon (1).png" alt="miguel de sousa">
         <nav>
-            <a href="#seçao1">Sobre mim</a>
-            <a href="#seçao2">Hobbies</a>
+            <a href="#seçao1" class="navbar">Sobre mim</a>
+            <a href="#seçao2" class="navbar">Hobbies</a>
             <img src="Imagens/icon (1).png" alt="logo">
-            <a href="#seçao3">Objetivos</a>
-            <a href="#seçao4">Biografia</a>
+            <a href="#seçao3" class="navbar">Objetivos</a>
+            <a href="#footer" class="navbar">Contatos</a>
         </nav>
     </header>
+
     <main>
         <section id="seçao1">
-          <div id="sobre-mim">
+            <img src="Imagens/foto dee apresentação .jpg" alt="foto miguel de sousa" id="apresentaçao">
+            <div id="sobre-mim">
             <h1>Sobre mim</h1>
             <p>Olá, me chamo Miguel de Sousa e essa página é sobre mim! Sou um adolescente de 16 anos que ama tecnologia e aspira conquistar lugares altos na área, estudo em uma escola técnica e curso o segundo ano de desenvolvimento de sistemas onde tenho aprendido muitas tecnologias novas. Além disso estudo por fora, tenho feito meus primeiros projetos e evoluído demais, espero ainda essse ano conseguir algum emprego na área de desenvolvimento web.</p>
             <p>Sou Cristão, e essa é sem dúvida a caractéristica que mais prezo em minha vida, se parecer com Jesus é meu maior objetivo! Aos 13 anos entreguei minha vida para Jesus e estou a 3 anos nessa jornada. Hoje lidero um grupo de cerca de 100 jovens, onde os pastoreio, lidero e auxilio e é um privilégio viver tudo isso, acredito na minha geração e espero sérvi-la sendo influência para cada jovem.</p>
             <p>Para mim uma vida saudável é fundamental, o estresse da rotina é inevitável e hábitos saudáveis nos ajudam vencer o estresse e cansaço, por isso valorizo demais uma vida de disciplina e foco!</p>
           </div>
-          <picture id="avatar">
-            <source media="(max-width: 800px)" srcset="Imagens/avatar2-pq.png">
-            <img src="Imagens/avatar2.png" alt="avatar">
-          </picture>
         </section>
         <section id="seçao2">    
             <div id="div1">
                 <img src="Imagens/book.png" alt="book.png" id="book">
                 <ul>
-                    <li>Ler livros</li>
-                    <li>Escrever</li>
-                    <li>Estudar a Bíblia</li>
+                    <li class="hobbies">Ler livros</li>
+                    <li class="hobbies">Escrever</li>
+                    <li class="hobbies">Estudar a Bíblia</li>
                 </ul>
                 <p>Um dos hobbies que amo praticar é relacionado aos livros, ler, escrever e aprender é uma das coisas que mais prezo, para mim é um forma de me sentir útil! Livros de desenvolvimento pessoal e livros cristãos são meus favoritos.</p>
             </div>
             <div id="div2">
                 <img src="Imagens/judo.png" alt="bjj.png" id="bjj">
                 <ul>
-                    <li>Treinar Jiu-Jitsu</li>
-                    <li>Assistir lutas</li>
-                    <li>Treinar Musculação</li>
+                    <li class="hobbies">Treinar Jiu-Jitsu</li>
+                    <li class="hobbies">Assistir lutas</li>
+                    <li class="hobbies">Treinar Musculação</li>
                 </ul>
                 <p>
                     Treinar é fundamental na minha rotina; para ter um estilo de vida organizado e saúdavel o crescimento físico é muito importante, sem falar que o esporte em sí é muito divertido, fico leve dentro do tatame!
@@ -55,9 +55,9 @@
             <div id="div3">
                <img src="Imagens/camera.png" alt="camera.png" id="camera">
                <ul>
-                    <li>Assistir Animes</li>
-                    <li>Assistir filmes de ficção</li>
-                    <li>Assistir animações</li>
+                    <li class="hobbies">Assistir Animes</li>
+                    <li class="hobbies">Assistir filmes de ficção</li>
+                    <li class="hobbies">Assistir animações</li>
                </ul>
                <p>
                  No meu tempo livre, procuro sempre assistir, é algo que curto muito fazer porque fico descontraído e não me preocupo muito, por minha rotina ser bastante corrida, uma horinha do meu dia eu tiro para assistir algo que gosto.
@@ -65,14 +65,43 @@
             </div>
         </section>
         <section id="seçao3">
-
-        </section>
-        <section id="seçao4">
-
+                <article id="cabeçalho">
+                    <h1>OBJETIVOS</h1>
+                    <p>Seus objetivos definem seu destino!</p>
+                </article>
+                
+                <div id="profi">
+                    <img src="Imagens/laptop.icon.png" alt="logo">
+                    <h3>Conquistar altos salários</h3>
+                    <p>A maioria sonha com salários acima da média, no meu caso, a programação é a ferramenta que possuo para aclcançar esse objetivo, mudar a realidade da minha família não tem preço!</p>
+                </div>
+                <div id="pessoal">
+                    <img src="Imagens/people-connecting-through-hugging-removebg-preview.png" alt="logo">
+                    <h3>Construir uma fámilia saúdavel</h3>
+                    <p>Construir uma família segundo os padões de Deus é minha prioridade, zelo por valores e principios que não permito serem violados. E quero fazer isso cedo, aos 21 anos.
+                    </p>
+                </div>
+                <div id="espiritual">
+                    <img src="Imagens/igreja.icon.png" alt="logo">
+                    <h3>Refêrencia para os jovens</h3>
+                    <p>Quero influenciar jovens e adolescentes a viverem o verdadeiro padrão que Deus estipulou para elas, para que dessa forma alcancem o potencial que possuem.</p>
+                </div>
+                <div id="estudos">
+                    <img src="Imagens/foguete.icon-removebg-preview.png" alt="logo">
+                    <h3>Mestre em ciência de dados</h3>
+                    <p>A área de dados é uma área que tem meu coração, futuramente pretendo meu profissionalizar ainda mais na área e me tornar um mestre, especificamente, na ciência de Dados</p>
+                </div>
         </section>
     </main>
-    <footer>
-
+    <footer id="footer">
+        <h2>CONTATO</h2>
+        <ul>
+            <li class="contatos"><a href="https://github.com/miguelsousaw" target="_blank"><img src="Imagens/github.icon.png" alt="github"></a></li>
+            <li class="contatos"><a href="#"><abbr title="(85) 98824-3040"><img src="Imagens/wpp.icon.png" alt="whatsapp"></abbr></a></li>
+            <li class="contatos"><a href="https://instagram.com/miguelsousx_/" target="_blank"><img src="Imagens/instagram-logo.png" alt="instagram"></a></li>
+            <li class="contatos"><a href="#" target="_blank"><img src="Imagens/linkedin-logo.png" alt=""></a></li>
+        </ul>
+        <p>Feito por: Miguel de Sousa</p>
     </footer>
 </body>
 </html>
