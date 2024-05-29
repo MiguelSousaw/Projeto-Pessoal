@@ -31,7 +31,7 @@ Grandes telas: Acima de 1200
     }
 
     nav > a{
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     nav > img{
@@ -39,7 +39,7 @@ Grandes telas: Acima de 1200
     }
 
     main{
-        grid-template-rows: 1200px 1fr 1700px;
+        grid-template-rows: 1600px 1fr 1700px;
     }
 
     /* ----------------------------------SEÇÃO 1--------------------------- */
