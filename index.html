@@ -7,8 +7,34 @@
     <link rel="stylesheet" href="style.css" media="screen">
     <link rel="stylesheet" href="media-query.css">
     <link rel="shortcut icon" href="Imagens/flag--kr-4x3.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 <body>
+    <script>
+        AOS.init();
+        AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of data-aos as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
+
+        // Settings that can be overridden on per-element basis, by data-aos-* attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        });
+    </script>
     <header>
         <h1 id="titulo-cabeçalho">Miguel De Sousa</h1>
         <img src="Imagens/icon (1).png" alt="miguel de sousa">
@@ -32,7 +58,8 @@
           </div>
         </section>
         <section id="seçao2">    
-            <div id="div1">
+            <h1 data-aos="fade-down" data-aos-delay="200">HOBBIES</h1>
+            <div id="div1" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="200">
                 <img src="Imagens/book.png" alt="book.png" id="book">
                 <ul>
                     <li class="hobbies">Ler livros</li>
@@ -41,7 +68,7 @@
                 </ul>
                 <p>Um dos hobbies que amo praticar é relacionado aos livros, ler, escrever e aprender é uma das coisas que mais prezo, para mim é um forma de me sentir útil! Livros de desenvolvimento pessoal e livros cristãos são meus favoritos.</p>
             </div>
-            <div id="div2">
+            <div id="div2" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="200">
                 <img src="Imagens/judo.png" alt="bjj.png" id="bjj">
                 <ul>
                     <li class="hobbies">Treinar Jiu-Jitsu</li>
@@ -52,7 +79,7 @@
                     Treinar é fundamental na minha rotina; para ter um estilo de vida organizado e saúdavel o crescimento físico é muito importante, sem falar que o esporte em sí é muito divertido, fico leve dentro do tatame!
                 </p>
             </div>
-            <div id="div3">
+            <div id="div3" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="200">
                <img src="Imagens/camera.png" alt="camera.png" id="camera">
                <ul>
                     <li class="hobbies">Assistir Animes</li>

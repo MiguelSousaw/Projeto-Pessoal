@@ -329,6 +329,17 @@ section{
     font-family: var(--abel);
 }
 
+#seçao2 > h1{
+    justify-self: center;
+    align-self: end;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    height: 100px;
+    font-size: 3em;
+    font-family: var(--bebas);
+}
+
 /*------------------------------Sessão3-------------------------*/
 
 #seçao3{
