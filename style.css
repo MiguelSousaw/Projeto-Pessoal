@@ -302,17 +302,7 @@ section{
     margin: 0 auto;
 }
 
-#book{
-    padding-top: 5px;
-}
 
-#bjj{
-    padding-top: 5px;
-}
-
-#camera{
-    padding-top: 5px;
-}
 
 .hobbies{
     list-style: '☑️';
@@ -338,6 +328,7 @@ section{
     height: 100px;
     font-size: 3em;
     font-family: var(--bebas);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.81);
 }
 
 /*------------------------------Sessão3-------------------------*/
@@ -376,6 +367,7 @@ section{
     font-size: 5em;
     font-family: var(--bebas);
     font-weight: normal;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
 #cabeçalho > p {
@@ -385,7 +377,7 @@ section{
     color: transparent;
     background-clip: text;
     display: inline;    
-    
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.449);
 }
 
 #seçao3 > div > h3{
@@ -393,6 +385,7 @@ section{
     font-weight: normal;
     font-size: 2em;
     text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.812);
 }
 
 #seçao3 > div > img{
